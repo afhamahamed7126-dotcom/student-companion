@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/xampp/**)",
+      "Bash(./mysql/bin/mysql.exe -u root -e \"SELECT password_hash FROM student_companion.users WHERE role='admin';\")",
+      "Bash(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\student-companion\" -Recurse -File -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object FullName)",
+      "Bash(Head -100)"
+    ]
+  }
+}

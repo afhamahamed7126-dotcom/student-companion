@@ -1,0 +1,5 @@
+# Block direct web access and prevent script execution
+Options -Indexes -ExecCGI
+php_flag engine off
+AddHandler cgi-script .php .php3 .php4 .php5 .phtml .pl .py .cgi .asp .aspx .sh
+deny from all
